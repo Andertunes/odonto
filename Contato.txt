@@ -1,0 +1,89 @@
+CSS______________________
+
+.box_contato{ /* chamarei 3 vezes */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    text-align: center;
+    color:white;
+    background-color: rgb(68, 68, 68);
+    width:34%;
+    height: 100px;
+    margin: 0px;
+    padding-top:1%;
+    padding-bottom: 1.2%;
+
+}
+
+.cont{
+    display:flex; 
+    flex-direction: row; /* também tem linhas */
+    flex-wrap: wrap; /* quando utilizamos blocos eles ficam um ao lado do outro mesmo que tenha tamanho total da tela, então para resolver isso, utilizamos o flex wrap. */
+    justify-content: left; /* alinhando os blocos na horizontal denro da div*/
+    align-items: center;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+.box_redesSociais{ 
+    width:34%;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    text-align: center;
+    color:white;
+    background-color: rgb(68, 68, 68);
+    width:32%;
+    height: 100px;
+    margin: 0px;
+    padding-top:1%;
+    padding-bottom: 1.2%;
+
+}
+
+.soc{
+    display:flex; 
+    flex-direction: row; /* também tem linhas */
+    flex-wrap: wrap; /* quando utilizamos blocos eles ficam um ao lado do outro mesmo que tenha tamanho total da tela, então para resolver isso, utilizamos o flex wrap. */
+    justify-content: center; /* alinhando os blocos na horizontal denro da div*/
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right:30px;
+    font-size: 1em;
+}
+
+.soc1{
+    text-align: center;
+    font-size: .8em;
+}
+
+
+
+HTML____________________
+
+<div class="box_contato">
+    <div class="cont">
+    <img src="images/LogoFacial.png"> &nbsp;&nbsp;&nbsp;A Odontoclinic
+</div>
+<div class="cont">
+    <img src="images/LogoFacial.png">&nbsp;&nbsp;&nbsp;Nossos Tratamentos
+</div>
+</div>
+
+<div class="box_contato">
+    <div class="cont">
+    <img src="images/LogoFacial.png"> &nbsp;&nbsp;&nbsp;Onde Estamos
+</div>
+<div class="cont">
+    <img src="images/LogoFacial.png"> &nbsp;&nbsp;&nbsp;Armonização Facial
+</div>
+</div>
+
+<div class="box_redesSociais">
+    <div class="soc">
+    <img class="soc"src="images/facebook.png">
+    <img class="soc"src="images/insta.png">
+    <img class="soc"src="images/twitter.png">
+</div>
+<div class="soc1">Conecte-se</div>
+</div>

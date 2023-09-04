@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* @charset - para evitar erros com caracteres especiais */
+
+.conteudo_formulario{
+    width:100%;
+    text-align: left;
+}
+
+
+form{
+    width: 50%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea{  /* fundo da caixa de preenchimento de dados */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em; /* fonte responsiva */
+    background-color: none;
+    border:none;
+    padding: 5px;
+    border-radius: 0px; /* arredonda a borda da caixa se quiser */
+}
+
+input:hover, textarea:hover{ /* Quando passar o mouse na caixa, muda de cor */
+    background-color: none;
+    border:none;
+}
+
+legend{  /* formatação das legendas - textos que estão em cima dos blocos */
+    color:brown;
+    font-weight: bold;
+    font-size: 1.0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset{ /* vamos colocar formatação na borda dos assuntos */
+    border:1;
+    border-color: black;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#sexo{ /* chamando o ID do Fieldset */
+    width:150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* alterando a cor do range -barra que demonstra o grau de urgência*/
+
+
+#cUrg{/* ID do Range */  -webkit-appearance: none; /* resetar a aparecia nativa do sistema operacional */
+    background: gray;
+    outline:none;  /* resetando a linha externa nativa - temos que colocar outline-style */
+    width:20%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+/* alterando a bolinha */
+.bar::-webkit-slider-thumb{
+    /* resetando a aparência nativa do sistema operacional */
+    -webkit-appearance: none;
+    appearance: none;
+    width:15px;
+    height: 15px;
+    border-radius: 50px;  /* arredondando o pointer - quanto maior for o número, mais arredondado */
+    background: yellow;
+    cursor:pointer;
+ }
+
+ ::placeholder{
+    font-size: 1em;
+    color:#3e7f92;
+ }
+ label{
+    color:#3e7f92;
+    font-size:0.8em;
+ }
+
+ #botao{
+    background-color: #3e7f92;
+    padding:10px;
+    color:white;
+    margin-bottom:81px;
+    width:100px;
+    height: auto;
+    border-radius: 10px;
+    cursor:pointer;
+ }
+
+ #botao:hover{
+    background-color: white;
+    color:#3e7f92;
+ }
+
+ .botao1{
+    width:100%;
+    height: auto;
+    margin:auto;
+    text-align: center;
+ }
+
+ .check{
+    width:100%;
+    height: auto;
+    text-align: left;
+ }
+
+ input {
+    margin:0 5px 0 0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }

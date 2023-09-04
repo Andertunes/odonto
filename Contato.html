@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odonto</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="CSS/contato.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<title>ODONTO</title>
+
+
+<body>
+    <div class="wrapper">
+        <div class="box_logo">
+            <img src="images/logo.png">
+        </div>
+<div class="box_topo">
+    <nav>
+        <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Quem_Somos.html">Quem Somos</a></li>
+        <li><a href="Alinhamento.html">Alinhamento</a></li>
+        <li><a href="Contato.html"> Contato</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="texto">
+    <h1 class="cor1">Precisando de Ajuda?</h1>
+</div>
+<div class="ajuda">
+<p class="cor2">Preencha o formulário abaixo para entrar em contato com a <b>OdontoClinic</b>.</p>
+</div>
+<div class="conteudo_formulario"> <!-- caixa que receberá o formulário -->
+    
+    <form method="post" id="fContato" action="mailto:antunes@sense.com.br">
+        <!-- metodo post para guardar as informações id (IDENTIFICAÇÃO) para chamar no css e formatar action para qual email irão os dados. Temos o metodo GET para pesquisas. Ele não guarda o conteúdo. -->
+        <p>
+                <input type="text" name="tNome" id="cNome" size="30" maxlength="20" placeholder="Primeiro Nome" autofocus required/>
+                <input type="text" name="tNome" id="cNome" size="30" maxlength="20" placeholder="Sobrenome" autofocus required/>
+                <!-- maxlength = qdt de caracteres que irá aceitar
+                ***size = tamanho da caixa de texto
+                ***placeholder - dica para o usuário de qual será o conteúdo da caixa
+                ***autofocus - cursor ficará piscando dentro da caixa
+                required - deixa o campo obrigatório -->
+        </p>
+        <p>
+            <input type="email" name="tMail" id="cMail" size="30" maxlength="30" placeholder="E-mail" autofocus required/>
+            <input type="tel" name="tFone" id="cFone" size="30" maxlength="30" placeholder="Celular" autofocus required/>
+        </p>
+
+       
+            <!-- Select criar caixas combinadas -->
+            <!-- ***SELECTED (este coloco dentro da tag option) - deixar o São Paulo marcado***VALUE o que vc colocar será como o banco de dados receberá. Caso você não coloque ela receberá o valor São Paulo mesmo -->
+            <p ><span style="color:#3e7f92">Escolha uma opção abaixo:</span></p>
+            <p><select name="tOpt" id="cOpt" maxlength="20">
+               <optgroup>
+                   <option value="MG">Agendar consulta</option>
+                   <option value="MG">Dúvidas</option>
+                   <option value="RJ">Reclamação</option>
+                   <option value="ES">Elogio</option>
+               </optgroup> 
+
+</select>
+</p>
+
+            <p>
+                <textarea name="tMsg" id="cMsg" cols="69" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
+            </p>
+            <div class="check">
+            <p>
+            <input type="checkbox" id="cOfertas" name="tOfertas">
+            <label for="cOfertas">Aceito receber novidades, conteúdos informativos e publicitários.</label>
+            </p>
+            </div>
+            <div class="check">
+            <p>
+                <input type="checkbox" id="cPolitica" name="tPolitica">
+                <label for="cPolitica">Declaro que li e aceito a politica de privacidade da OdontoClinic. </label>
+                </p>
+            </div>
+
+        <div class="botao1">
+        <input id="botao" type="submit" name="Enviar">
+    </div>
+    </form>
+
+    <div class="box_rodape">
+        Todos os direitos reservados 2023
+    </div>
+    </div>
+</body>
+</html>

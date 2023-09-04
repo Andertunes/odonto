@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+body{
+    margin:0px;
+    background-color: aliceblue;
+}
+    .wrapper{
+        margin:auto; /* para centralizar */
+        display:flex;  /* para transformar em blocos */
+        flex-direction: row; /* também tem colunas */
+        flex-wrap: wrap; /* quando utilizamos blocos eles ficam um ao lado do outro mesmo que tenha tamanho total da tela, então para resolver isso, utilizamos o flex wrap. */
+        justify-content: center; /* alinhando os blocos na horizontal denro do principal (wrapper) */
+        align-items: center; /* alinhamento dos blocos na vertical dentro do principal (wrapper) */
+        width:100%;  /* largura do principal */
+        height: auto;
+        background-color: none;
+        padding:0px;  /* espaço entre as caixas para ficarem distantes */
+}  
+
+/*BOTOES*/
+
+nav{
+	float: right;
+}
+
+nav ul{
+	list-style: none; /*remover bolinhas*/
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li{
+	float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a{
+	text-decoration: none; /*remover sublinhado*/
+	color: #ffffff;
+	padding: 15px 15px 10px 15px;
+}
+
+nav ul li a:hover{ /*hover (mouse sobre o link)*/
+	color: #fffcfc;
+	/*text-decoration: underline;*/
+	border-bottom: #ffffff 2px solid;
+}
+
+    .box_topo{
+        display:flex;
+        justify-content: right;
+        align-items: center;
+        background-color: rgb(0, 102, 255);
+        width:80%;
+        height: 50px;
+        margin:0px;
+        padding:0px;
+}
+
+.box_logo{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(0, 102, 255);
+    width:19%;
+    height: 50px;
+    margin:0px;
+    padding-left:1%;
+}
+
+    .box_banner{
+        background-color:none;
+        width:100%;
+        height: auto;
+        margin:0px;
+        font-size: 1.1em;
+        font-family: calibri;
+}
+
+    .titulo{
+        width:100%;
+        height: auto;
+        padding-top:8px;
+        padding-bottom: 0px;
+        color:#3e7f92
+    }
+
+    .box_tratamento{
+        display:flex; 
+        flex-direction: column; /* também tem linhas */
+        flex-wrap: wrap; /* quando utilizamos blocos eles ficam um ao lado do outro mesmo que tenha tamanho total da tela, então para resolver isso, utilizamos o flex wrap. */
+        justify-content: center; /* alinhando os blocos na horizontal denro do principal (wrapper) */
+        align-items: center;
+        background-color: #3e7f92;
+        width:20%;
+        height: 350px;
+        margin: 1.5%;
+        padding-left:15px;
+        padding-right: 15px;
+        border-radius: 20px;
+        color:white;
+        text-align: center;
+}
+
+.harmoniza{
+    display:flex; 
+    flex-direction: row; /* também tem linhas */
+    flex-wrap: wrap; /* quando utilizamos blocos eles ficam um ao lado do outro mesmo que tenha tamanho total da tela, então para resolver isso, utilizamos o flex wrap. */
+    justify-content: left; /* alinhando os blocos na horizontal denro da div*/
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.box_hamoniza{
+    background-color:none;
+    width:45%;
+    height: auto;
+    margin-right: 3.5%;
+
+}
+
+.box_contato{ /* chamarei 2 vezes */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    text-align: center;
+    color:white;
+    background-color: rgb(68, 68, 68);
+    width:34%;
+    height: 100px;
+    margin: 0px;
+    padding-top:1%;
+    padding-bottom: 1.2%;
+}
+
+.cont{
+    display:flex; 
+    flex-direction: row; /* também tem linhas */
+    flex-wrap: wrap; /* quando utilizamos blocos eles ficam um ao lado do outro mesmo que tenha tamanho total da tela, então para resolver isso, utilizamos o flex wrap. */
+    justify-content: left; /* alinhando os blocos na horizontal denro da div*/
+    align-items: center;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+.box_redesSociais{ 
+    width:33%;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    text-align: center;
+    color:white;
+    background-color: rgb(68, 68, 68);
+    width:32%;
+    height: 100px;
+    margin: 0px;
+    padding-top:1%;
+    padding-bottom: 1.2%;
+
+}
+
+.soc{
+    display:flex; 
+    flex-direction: row; /* também tem linhas */
+    flex-wrap: wrap; /* quando utilizamos blocos eles ficam um ao lado do outro mesmo que tenha tamanho total da tela, então para resolver isso, utilizamos o flex wrap. */
+    justify-content: center; /* alinhando os blocos na horizontal denro da div*/
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right:30px;
+    font-size: 1em;
+}
+
+.soc1{
+    text-align: center;
+    font-size: .8em;
+}
+
+.contSoc{
+    display:flex;
+    width:100%;
+    height: 100px;
+}
+
+    .box_rodape{
+        display:flex; /* display flex para transformar em bloco para poder alinhar o conteudo no centro vertical e horizontal */
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 102, 255);
+        width:100%;
+        height:50px;
+        margin:0px;
+        padding:0px;
+        font-size: 1.1em;
+        font-family: calibri;
+        color:white;
+}
+
+    h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        color:white;
+        text-align: center;
+
+    }
+
+    .cor1{
+        color:#3e7f92;
+        width:70%;
+        background-color: none;
+        display:flex; /* display flex para transformar em bloco para poder alinhar o conteudo no centro vertical e horizontal */
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        margin-bottom: 10px;
+    }
+
+    .cor2{
+        color:#3e7f92;
+        font-size: 1em;
+    }
+
+    /* CSS da página quem somos */
+
+    .container{
+        width:70%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+.img{
+    width:100%;
+    height: auto;
+}
+
+
+    /* CSS da página alinhamentos */
+
+    .banner_invisa{
+        width:100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .alinhadores{
+        width:95%;
+        margin-bottom: 0px;
+    }
+
+
+        /* CSS da página contato */
+
+.texto{
+    width:100%;
+    height: auto;
+    text-align: left;
+    color:#3e7f92;
+    margin-top: 82px;
+}
+
+.ajuda{
+    width:100%;
+    height: auto;
+    text-align: left;
+    color:#3e7f92;
+}
+
+/* Breakpoints */
+
+@media screen and (min-width:375px){
+    .box_tratamento{
+    width:300px;
+    height: auto;
+    float:left;
+    margin:1%;
+    padding-top: 1%;
+    }
+    .box_hamoniza{
+    width:1200px;
+    height: auto;
+    margin:1%;
+    margin:auto;
+    text-align: center;
+    }
+}
+
+@media screen and (min-width:576px){
+    .box_tratamento{
+    width:300px;
+    height: auto;
+    float:left;
+    margin:1%;
+    padding-top: 1%;
+    }
+    .box_hamoniza{
+        width:1200px;
+        height: auto;
+        margin:1%;
+        margin:auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px){
+    .box_tratamento{
+        width:300px;
+        height: auto;
+        float:left;
+        margin:1%;
+        padding-top: 1%;
+        }
+        .box_hamoniza{
+            width:850px;
+            height: auto;
+            margin:1%;
+            margin:auto;
+            text-align: center;
+        }
+    }
+
+@media screen and (min-width:992px){
+    .box_tratamento{
+        width:300px;
+        height: auto;
+        float:left;
+        margin:1%;
+        padding-top: 1%;
+        }
+        .box_hamoniza{
+            width:850px;
+            height: auto;
+            margin:1%;
+            margin:auto;
+            text-align: center;
+
+        }
+    }
+
+
+@media screen and (min-width:1200px){
+    .box_tratamento{
+        width:300px;
+        height: auto;
+        float:left;
+        margin:1%;
+        padding-top: 1%;
+        font-size: 1em;
+        }
+        .box_hamoniza{
+            width:690px;
+            height: auto;
+            margin:1%;
+            margin:auto;
+            text-align: center;
+        }
+    }
+
